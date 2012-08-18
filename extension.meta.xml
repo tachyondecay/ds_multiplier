@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="ds_multiplier" status="experimental" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Data Source Multiplier</name>
+	<description>Adds the ability to execute a data source for each value in a list of filter values rather than filtering by all of them.</description>
+	<repo type="github">https://github.com/tachyondecay/ds_multiplier</repo>
+
+	<types>
+		<type>Data Sources</type>
+	</types>
+	<authors>
+		<author>
+			<name github="tachyondecay" symphony="tachyondecay" twitter="tachyondecay">Ben Babcock</name>
+			<website>http://tachyondecay.net/</website>
+		</author>
+	</authors>
+
+	<releases>
+		<release version="0.1" date="2012-08-18" min="2.3" />
+	</releases>
+</extension>
