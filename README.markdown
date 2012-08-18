@@ -20,7 +20,7 @@ You can always install the latest version through git: `git clone git://github.c
 
 Suppose you have two sections, Categories and Articles, linked how one would expect, and you want to display the 5 most recent articles from *each* category. Here's how you would set up your data sources using data source multiplier.
 
-First, create a data source for the Categories section. You may add some filters here if you don't want to display articles for *ever* category. Output the system ID as an output parameter.
+First, create a data source for the Categories section. You may add some filters here if you don't want to display articles for *every* category. Output the system ID as an output parameter.
 
 Then, create a data source for the Articles section:
   - Filter it on the field linked to the Categories section. For the value of the filter, enter the output parameter from the data source above. E.g., if you named the data source "Categories", then enter `{$ds-categories.system-id}`.
