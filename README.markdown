@@ -18,15 +18,15 @@ You can always install the latest version through git: `git clone git://github.c
 
 ## Example
 
-Suppose you have two sections, Categories and Articles, linked how one would expect, and you want to display the 5 most recent articles from //each// category. Here's how you would set up your data sources using data source multiplier.
+Suppose you have two sections, Categories and Articles, linked how one would expect, and you want to display the 5 most recent articles from *each* category. Here's how you would set up your data sources using data source multiplier.
 
-First, create a data source for the Categories section. You may add some filters here if you don't want to display articles for //every// category. Output the system ID as an output parameter.
+First, create a data source for the Categories section. You may add some filters here if you don't want to display articles for *ever* category. Output the system ID as an output parameter.
 
 Then, create a data source for the Articles section:
-  * Filter it on the field linked to the Categories section. For the value of the filter, enter the output parameter from the data source above. E.g., if you named the data source "Categories", then enter `{$ds-categories.system-id}`.
-  * Limit the output of the data source to 5 entries per page (or however many entries you want per category).
-  * You may also want to group the XML output by this field.
-  * You have to save the second data source and then go back and edit it in order for the multiplier checkbox to appear. While editing the data source, tick "Execute for each value in this parameter" below the filter on the category field. Save your changes.
+  - Filter it on the field linked to the Categories section. For the value of the filter, enter the output parameter from the data source above. E.g., if you named the data source "Categories", then enter `{$ds-categories.system-id}`.
+  - Limit the output of the data source to 5 entries per page (or however many entries you want per category).
+  - You may also want to group the XML output by this field.
+  - You have to save the second data source and then go back and edit it in order for the multiplier checkbox to appear. While editing the data source, tick "Execute for each value in this parameter" below the filter on the category field. Save your changes.
 
 Add both of the above data sources to a page.
 
