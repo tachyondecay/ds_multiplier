@@ -88,7 +88,7 @@
 		}
 
 		public function __dsPreExec(&$context) {
-			if(!empty($context) && isset($context['datasource']) && isset($context['datasource']->dsParamMULTIPLIERS)) {
+			if(!empty($context) && isset($context['datasource']) && empty($context['xml']) && isset($context['datasource']->dsParamMULTIPLIERS)) {
 				$ds = $context['datasource'];
 				$container = new XMLElement($ds->dsParamROOTELEMENT);
 				$section_info = null;
